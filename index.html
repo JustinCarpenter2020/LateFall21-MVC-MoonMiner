@@ -26,7 +26,8 @@
       <div class="row">
         <div class="col-4 text-center">
           <!-- <div id="app"></div> -->
-          <img class="vinyl mt-5" src="https://www.seekpng.com/png/detail/20-202943_record-drawing-vinyl-record.png" alt="">
+          <img class="vinyl mt-5"  onclick="app.upgradeController.scratch()" src="https://www.seekpng.com/png/detail/20-202943_record-drawing-vinyl-record.png" alt="">
+          <audio id="scratch" src="./assets/sounds/Scratch.mp3"></audio>
         </div>
         <div class="col-3">
           <div class="row h-100 align-items-center text-center"> 
@@ -34,10 +35,9 @@
               <img class="img-fluid rounded" src="https://ilyabirman.net/meanwhile/pictures/wireless-dj-knob-retina.png" alt="">
             </div>
             <div class="col-4">
-              <span id="stylePoints">
+              <span id="flow">
                 0
               </span>
-              <audio id="scratch" src="./assets/sounds/Scratch.mp3"></audio>
             </div>
             <div class="col-4">
               <img class="img-fluid rounded" src="https://ilyabirman.net/meanwhile/pictures/wireless-dj-knob-retina.png" alt="">
@@ -45,28 +45,17 @@
           </div>
         </div>
         <div class="col-4 text-center">
-          <img class="vinyl mt-5" src="https://www.seekpng.com/png/detail/20-202943_record-drawing-vinyl-record.png" alt="">
+          <img class="vinyl mt-5" onclick="app.upgradeController.scratch()" src="https://www.seekpng.com/png/detail/20-202943_record-drawing-vinyl-record.png" alt="">
         </div>
       </div>
       <div class="row mt-5">
         <div class="col-6">
-          <div class="row">
-            <div class="col-6">
-              <button class="btn btn-info btn-height w-75">fd</button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-warning btn-height w-75">wrwer</button>
-            </div>
-            <div class="col-6 mt-3">
-              <button class="btn btn-success btn-height w-75">fdsf</button>
-            </div>
-            <div class="col-6 mt-3">
-              <button class="btn btn-primary btn-height w-75">dsfsd</button>
-            </div>
+          <!-- <---------------------------------Where we inject our buttons ---------->
+          <div class="row" id="buttons">
           </div>
         </div>
         <div class="col-6 d-flex align-items-center">
-          <button class="btn btn-danger w-100 h-50">DROP THE BASS</button>
+          <button class="btn btn-danger w-100 h-50" onclick="app.upgradeController.shake()" >DROP THE BASS</button>
           <audio id="Bass" src="./assets/sounds/D-D-D-D-Drop The Bass.mp3"></audio>
         </div>
       </div>

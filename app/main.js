@@ -1,7 +1,8 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { UpgradeController } from "./Controllers/UpgradeController.js";
+
 
 class App {
-  valuesController = new ValuesController();
+  upgradeController = new UpgradeController();
 }
 
 window["app"] = new App();

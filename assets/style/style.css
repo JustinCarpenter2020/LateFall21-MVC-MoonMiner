@@ -141,6 +141,7 @@ animation-timing-function: linear;
 /* <------------------------------------- Shake -----------------------------------------> */
 .shake {
 	-webkit-animation-name: spaceboots;
+  animation-delay: 1.8s;
 	-webkit-animation-duration: 0.8s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
